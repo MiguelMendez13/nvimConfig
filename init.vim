@@ -5,7 +5,7 @@
 " |_|  |_|_|   \_/ |_|_| |_| |_|_|  \___| 
 "                                          
      
-let mapleader=" " " Tecla Lider  
+let mapleader="0" " Tecla Lider  
 so ~/.config/nvim/PlugginsText.vim         "Archivo de pluggins
 colorscheme monokai      " Tema
 set nocompatible         " Quita compatilibilidad con vim
@@ -26,12 +26,22 @@ set nu rnu               "Tipo de numeracion de lineas
     nnoremap NT :NERDTree<Enter>
     nnoremap <Leader>w :w<Enter>
     nnoremap <Leader>w1 :w!<Enter>
+    
+    nnoremap <Leader>w :w<Enter>
+    nnoremap <Leader>w1 :w!<Enter>
+    
+    nnoremap <Leader>q :q<Enter>
+    nnoremap <Leader>q1 :q!<Enter>
+    
+    nnoremap <Leader>x :x<Enter>
+    nnoremap <Leader>x1 :x!<Enter>
+
 
 "    nnoremap <Control><Shift>w w<Enter>
 
 "    nnoremap <F6> :setlocal spell! spellang=<Enter>
 " Navegando guias
-    inoremap <leader><leader> <Esc>/<++><Enter>_c4l 
-    vnoremap <leader><leader> <Esc>/<++><Enter>_c4l 
-    nnoremap <leader><leader> <Esc>/<++><Enter>_c4l
+"    inoremap <leader><leader> <Esc>/<++><Enter>_c4l 
+"    vnoremap <leader><leader> <Esc>/<++><Enter>_c4l 
+"    nnoremap <leader><leader> <Esc>/<++><Enter>_c4l
 
