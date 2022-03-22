@@ -1,4 +1,4 @@
-"  __  __ _         _                    
+"  _                   
 " |  \/  (_) __   _(_)_ __ ___  _ __ ___ 
 " | |\/| | | \ \ / / | '_ ` _ \| '__/ __|
 " | |  | | |  \ V /| | | | | | | | | (__ 
@@ -13,7 +13,7 @@ syntax on                " Activa los colores
 set mouse=a              " Permite el uso de Mouse
 set clipboard=unnamedplus " Copiad
 set nu rnu               "Tipo de numeracion de lineas
-  
+   
 " tabuladores
     set shiftwidth=4
     set tabstop=4
@@ -22,19 +22,29 @@ set nu rnu               "Tipo de numeracion de lineas
     filetype indent on
 
 "configurar teclas 
-    nnoremap Q !!$SHELL<Enter>
-    nnoremap NT :NERDTree<Enter>
+"    nnoremap Q !!$SHELL<Enter>
+
+
+"Guardar y forzar guardado
     nnoremap <Leader>w :w<Enter>
     nnoremap <Leader>w1 :w!<Enter>
-    
-    nnoremap <Leader>w :w<Enter>
-    nnoremap <Leader>w1 :w!<Enter>
-    
+" Quitar y forzar quitado
     nnoremap <Leader>q :q<Enter>
     nnoremap <Leader>q1 :q!<Enter>
-    
+" Guardar y quitar y forzado de guardpo y quitado
     nnoremap <Leader>x :x<Enter>
     nnoremap <Leader>x1 :x!<Enter>
+
+" Gestor de archivos
+    nnoremap <Leader>nt :NERDTree<Enter>
+
+
+
+
+
+
+
+
 
 
 "    nnoremap <Control><Shift>w w<Enter>

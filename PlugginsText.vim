@@ -14,6 +14,14 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'itchyny/lightline.vim',
 " Arbol de Directorios
     Plug 'scrooloose/nerdtree',
+    "Plug 'ryanoasis/vim-devicons', "Iconos en nerdtree
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight', "colorear iconos
+    "Copy, edit, delete etc. visual(o i s t dd m c)
+    Plug 'PhilRunninger/nerdtree-visual-selection',
+    Plug 'Xuyuanp/nerdtree-git-plugin', "git nerdtree
+
+
+
 " Autocerrado  de etiquetas
     Plug 'alvan/vim-closetag',
 " Se agrego o se quito lineas
@@ -30,4 +38,32 @@ call plug#begin('~/.config/nvim/plugged')
     " Plug 'scrooloose/nerdcommenter',
 " Deteccion de lenguajes
     Plug 'sheerun/vim-polyglot',
+
+
+
+" Sacar imagenes con estilo del codigo
+    "Plug 'segeljakt/vim-silicon',
+
+
+
+
+" Iluminar misma palabra
+    Plug 'RRethy/vim-illuminate',
+" Colores en los parentesis
+    Plug 'frazrepo/vim-rainbow',
+    
+
+
+
+
+
+
+
+" Minimap
+    "Plug 'wfxr/minimap.vim'
+
+
+
+
+
 call plug#end()
