@@ -10,8 +10,15 @@ call plug#begin('~/.config/nvim/plugged')
 " Tema
 "   Plug 'dracula/vim', {'as':'dracula'},
     Plug 'sickill/vim-monokai', {'as':'monokai'}
+
 " Barra de abajo
     Plug 'itchyny/lightline.vim',
+    "Plug 'maximbaz/lightline-ale',
+" Barra abajo 2
+"   Plug 'vim-airline/vim-airline',
+"    Plug 'vim-airline/vim-airline-themes'
+"    Plug 'chrisbra/csv.vim',
+
 " Arbol de Directorios
     Plug 'scrooloose/nerdtree',
     "Plug 'ryanoasis/vim-devicons', "Iconos en nerdtree
@@ -20,7 +27,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'PhilRunninger/nerdtree-visual-selection',
     Plug 'Xuyuanp/nerdtree-git-plugin', "git nerdtree
 
-
+" Fuigitive git
+    Plug 'tpope/vim-fugitive',
 
 " Autocerrado  de etiquetas
     Plug 'alvan/vim-closetag',
@@ -67,3 +75,13 @@ call plug#begin('~/.config/nvim/plugged')
 
 
 call plug#end()
+
+let g:lightline = {
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
