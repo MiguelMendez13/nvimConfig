@@ -59,8 +59,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'RRethy/vim-illuminate',
 " Colores en los parentesis
     Plug 'frazrepo/vim-rainbow',
-    
-
+" Csv formato
+    Plug 'chrisbra/csv.vim'
 
 
 
@@ -69,8 +69,8 @@ call plug#begin('~/.config/nvim/plugged')
 
 " Minimap
     "Plug 'wfxr/minimap.vim'
-
-
+" Navegar entre terminales
+    Plug 'christoomey/vim-tmux-navigator'
 
 
 

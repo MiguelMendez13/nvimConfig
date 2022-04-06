@@ -47,6 +47,9 @@ set nu rnu               "Tipo de numeracion de lineas
 
 
 
+
+
+
 "    nnoremap <Control><Shift>w w<Enter>
 
 "    nnoremap <F6> :setlocal spell! spellang=<Enter>
